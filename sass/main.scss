@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import "variables";
+@import "mixins";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{
+    @include listStyle;
+}
+
+html{ font-size: 10px; }
+
+body{
+    color: $stone_600;
+    background-color: $stone_100;
+    @include textRegular;
+}
+
+main{
+    max-width: 100%;
+    background-color: $white;
+    overflow: hidden;
+    .container{
+        width: 85%;
+        margin: auto;
+    }
+    .recipe__header{
+        width: 100%;
+        margin-bottom: 3.2rem;
+        &-cover{
+            img{
+                width: 100%;
+                margin-bottom: 4rem;
+            }
+        }
+        &-title{
+            @include title_h1;
+            margin-bottom: 2.4rem;
+        }
+    }
+    .recipe__preparation{
+        @include article;
+        .recipe__time{
+            padding: 2.4rem;
+            background-color: $rose_50;
+            border-radius: 1.2rem;
+            margin-bottom: 3.2rem;
+            h3{
+                @include title_h3;
+            }
+            ul{
+                @include listStyle;
+                li{
+                    @include li;
+                }
+                li::before{
+                    color: $rose_800;
+                    @include li_bullet
+                }
+            }
+        }
+    }
+    .recipe__ingredients{
+        @include article;
+        h2{
+            @include title_h2;
+        }
+        ul{
+            @include listStyle;
+            padding-left: .8rem;
+            li{
+                @include li;
+            }
+            li::before{
+                @include li_bullet;
+            }
+        }
+    }
+    .recipe__instructions{
+        @include article;
+        h2{
+            @include title_h2
+        }
+        ol{
+            list-style-position: outside;
+            padding-left: 3rem;
+            li{
+                text-indent: 0rem;
+                padding-left: 1rem;
+                font-family: 'Outfit';
+            }
+            li::marker{
+                color: $brown_800;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
