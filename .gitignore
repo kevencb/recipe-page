@@ -11,6 +11,11 @@
 ###############################################
 *.xd
 
-# Avoid your project being littered with annoying .DS_Store files!
+# Evitar archivos del sistema y de configuración
+/design
 .DS_Store
 .prettierignore
+.gitignore
+README-template.md
+style-guide.md
+.hintrc
