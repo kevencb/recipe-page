@@ -43,7 +43,6 @@ main{
         }
     }
     .recipe__preparation{
-        @include article;
         .recipe__time{
             padding: 2.4rem;
             background-color: $rose_50;
@@ -99,8 +98,33 @@ main{
             }
         }
     }
+    .recipe__nutrition{
+        margin-bottom: 32px;
+        h2{
+            @include title_h2
+        }
+        p{
+            margin-bottom: 1.2rem;
+        }
+        table{
+            width: 100%;
+            tr{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-between;
+                border-bottom: 1px solid $stone_100;
+                padding: 1.2rem 3.2rem;
+                td:last-child{
+                    color: $brown_800;
+                    font-weight: 700;
+                }
+            }
+            tr:last-child{
+                border: none;
+            }
+        }
+    }
 }
-
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

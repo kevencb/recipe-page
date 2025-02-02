@@ -52,11 +52,6 @@ main .recipe__header-title {
   line-height: 100%;
   margin-bottom: 2.4rem;
 }
-main .recipe__preparation {
-  padding-bottom: 3.2rem;
-  border-bottom: 1px solid hsl(30, 54%, 90%);
-  margin: 3.2rem auto;
-}
 main .recipe__preparation .recipe__time {
   padding: 2.4rem;
   background-color: hsl(330, 100%, 98%);
@@ -145,6 +140,35 @@ main .recipe__instructions ol li {
 main .recipe__instructions ol li::marker {
   color: hsl(14, 45%, 36%);
   font-weight: 700;
+}
+main .recipe__nutrition {
+  margin-bottom: 32px;
+}
+main .recipe__nutrition h2 {
+  font-family: "Young Serif", sans-serif;
+  font-size: 2.8rem;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 2.4rem;
+}
+main .recipe__nutrition p {
+  margin-bottom: 1.2rem;
+}
+main .recipe__nutrition table {
+  width: 100%;
+}
+main .recipe__nutrition table tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(30, 54%, 90%);
+  padding: 1.2rem 3.2rem;
+}
+main .recipe__nutrition table tr td:last-child {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+main .recipe__nutrition table tr:last-child {
+  border: none;
 }
 
 .attribution {
