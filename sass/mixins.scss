@@ -6,6 +6,7 @@
     color: $stone_900;
     margin-bottom: 2.4rem;
     line-height: 100%;
+    font-weight: 400;
 }
 
 @mixin title_h2{
@@ -13,6 +14,7 @@
     font-size: 2.8rem;
     color: $brown_800;
     margin-bottom: 2.4rem;
+    font-weight: 100;
 }
 
 @mixin title_h3{
